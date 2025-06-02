@@ -2,29 +2,39 @@
 using namespace std;
 
 int main(){
-    int n;
+    int numero, opcion;
     cout << "BIENVENIDO A MI PROGRAMA!" << endl;
-    
     do {
-        cout << "Ingrese la cantidad de multiplos de 7 que desea conocer: " << endl;
-        cin >> n;
-
-        if (n <= 0) {
-            cout << "Por favor, ingrese un numero mayor a cero." << endl;
-        }
-    } while (n <= 0);
     
-
-    cout << "Los primeros " << n << " multiplos de 7 son:" << endl;
+	    do {
+	        cout << "Ingrese la cantidad de multiplos de 7 que desea conocer: " << endl;
+	        cin >> numero;
+	
+	        if (numero <= 0) {
+	            cout << "Por favor, ingrese un numero mayor a cero." << endl;
+	        }
+	    } while (numero <= 0);
+	    
+	
+	    cout << "Los primeros " << numero << " multiplos de 7 son:" << endl;
+	    
+	    for(int i = 1; i <= numero; i++){
+	    	
+	        cout << ( i * 7); 
+			if ( i < numero){
+				cout << ", ";
+			}
+	    }
+		cout << endl;
+	    cout << endl;
+	    cout << "Desea calcular otra vez?" << endl;
+        cout << "1. Si" << endl;
+        cout << "2. No" << endl;
+        cout << "Seleccione una opcion:" << endl;
+        cin >> opcion;
+        cout << endl;
+    } while (opcion == 1);
     
-    for(int i = 1; i <= n; i++){
-    	
-        cout << ( i * 7); 
-		if ( i < n){
-			cout << ", ";
-		}
-    }
-    cout << endl;
     cout << "GRACIAS POR USAR MI PROGRAMA <3";
     return 0;
 }
