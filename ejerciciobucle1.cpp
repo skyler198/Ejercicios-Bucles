@@ -25,14 +25,21 @@ int main(){
 				cout << ", ";
 			}
 	    }
-		cout << endl;
-	    cout << endl;
-	    cout << "Desea calcular otra vez?" << endl;
-        cout << "1. Si" << endl;
-        cout << "2. No" << endl;
-        cout << "Seleccione una opcion:" << endl;
-        cin >> opcion;
-        cout << endl;
+	    do{
+			cout << endl;
+		    cout << endl;
+		    cout << "Desea calcular otra vez?" << endl;
+	        cout << "1. Si" << endl;
+	        cout << "2. No" << endl;
+	        cout << "Seleccione una opcion:" << endl;
+	        cin >> opcion;
+	        cout << endl;
+	        if (opcion != 1 && opcion != 2){
+	        	cout << "opcion invalida, intente de nuevo" << endl;
+			}
+	        
+        } while (opcion != 1 && opcion != 2);
+        
     } while (opcion == 1);
     
     cout << "GRACIAS POR USAR MI PROGRAMA <3";
