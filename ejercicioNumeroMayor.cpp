@@ -1,9 +1,9 @@
 #include <iostream>
 using namespace std;
 
-int obtenerNumeroMayor(int n){
+int obtenerNumeroMayor(int n) {
 	int numero, mayor;
-    cout <<"Ingrese el primer numero:" << endl;
+    cout <<"Ingrese el primer numero:"<< endl;
     cin >> mayor;
         
     for( int i = 2; i <= n; i++) {
@@ -14,13 +14,11 @@ int obtenerNumeroMayor(int n){
         }
     }
     return mayor;
-
 }
 
-
 int main() {
-    int n, num, mayor;
-    cout << "BIENVENIDO A MI PROGRAMA!" << endl;
+    int n;
+    cout << "¡BIENVENIDO A MI PROGRAMA!" << endl;
     cout <<"Ingrese la cantidad de numeros que desea evaluar: "<< endl;
     cin >> n;
     
@@ -28,8 +26,8 @@ int main() {
         int mayor = obtenerNumeroMayor(n);
         cout <<"El mayor numero es: "<< mayor << endl;
 	} else {
-		cout << "ingrese una cantidad mayor que cero porfavor." << endl;
+		cout << "Por favor ingrese una cantidad mayor que cero." << endl;
 	}
-	cout << "GRACIAS POR UTILIZAR MI PROGRAMA <3" << endl;
+	cout << "¡GRACIAS POR UTILIZAR MI PROGRAMA! <3" << endl;
     return 0;
 }
